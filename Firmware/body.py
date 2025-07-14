@@ -12,6 +12,25 @@ import board, busio
 import displayio
 import adafruit_imageload
 import gc9a01
+import time
+import board
+import pwmio
+from adafruit_motor import servo
+from analogio import AnalogIn
+
+# create a PWMOut object on Pin A2.
+pwm = pwmio.PWMOut(board.GP0, duty_cycle=2 ** 15, frequency=50)
+pwm2 = pwmio.PWMOut(board.GP1, duty_cycle=2 ** 15, frequency=50)
+
+x_pin = AnalogIn(board.GP27_A1)
+y_pin = AnalogIn(board.GP26_A0)
+
+# Create a servo object, my_servo.
+my_servo = servo.Servo(pwm)
+my_servo_2 = servo.Servo(pwm2)
+
+def get_voltage(pin):
+    return ((pin.value * 180) / 65536)
 
 displayio.release_displays()
 
@@ -94,3 +113,5 @@ the_eyes = [
 while True:
     for eye in the_eyes:
         eye.update()
+    my_servo_2.angle = get_voltage(x_pin)
+    my_servo.angle = get_voltage(y_pin)
