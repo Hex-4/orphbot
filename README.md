@@ -10,11 +10,13 @@ The first part is Orpheus' body. She has a head with two degrees of freedom cont
 
 Orpheus' PCB skateboard was made on the last day (it's 3:44 AM as I, hex4, write this) and is arguably the jankiest but also funnest part. It's powered by a Pi Pico connected to some DC motors.
 
-Orphbot was made by Neven (12, Canada, @hex4), Jason (13, Hong Kong), and Jenin (14, Canada).
+Orphbot was made by Neven (Canada, @hex4), Jason (Hong Kong), and Jenin (Canada).
 
 ![alt text](Images/20250714_044842.jpg)
 
 ![alt text](Images/20250714_044910.jpg)
+
+[watch the "video"](https://youtube.com/shorts/jfWwtk3ynPc)
 
 ## Wiring
 
@@ -27,6 +29,18 @@ Orphbot was made by Neven (12, Canada, @hex4), Jason (13, Hong Kong), and Jenin 
 - Power the first display with 5 or 3v and GND.
 - Connect the display's other pins: CLK to GP10, MOSI to GP11, RST to GP12, DC to GP13, and CS to GP14.
 - Connect the other display's pins to the exact same ones on the Pico. I don't know why this works, but it does!
+
+![alt text](Images/20250714_074114.jpg)
+
+### Skateboard
+
+- Wrire up the motors to GP0/1 and ground. This is scary but it kinda works with small motors!
+
+![alt text](Images/20250714_080629.jpg)
+
+![alt text](Images/20250714_065042.jpg)
+
+![alt text](Images/20250714_065101.jpg)
 
 ## BOM
 
