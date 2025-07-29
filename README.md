@@ -12,6 +12,11 @@ Orpheus' PCB skateboard was made on the last day (it's 3:44 AM as I, hex4, write
 
 Orphbot was made by Neven (Canada, @hex4), Jason (Hong Kong), and Jenin (Canada).
 
+<img width="360" height="356" alt="image" src="https://github.com/user-attachments/assets/412495b5-ea9b-40b9-ae1b-15cdb12e10d2" />
+
+<img width="836" height="604" alt="image" src="https://github.com/user-attachments/assets/abff1e7d-24a9-46cc-a281-9417c22a78c8" />
+
+
 ![alt text](Images/20250714_044842.jpg)
 
 ![alt text](Images/20250714_044910.jpg)
@@ -30,13 +35,14 @@ Orphbot was made by Neven (Canada, @hex4), Jason (Hong Kong), and Jenin (Canada)
 - Connect the display's other pins: CLK to GP10, MOSI to GP11, RST to GP12, DC to GP13, and CS to GP14.
 - Connect the other display's pins to the exact same ones on the Pico. I don't know why this works, but it does!
 
-![alt text](Images/20250714_074114.jpg)
+<img width="1538" height="837" alt="image" src="https://github.com/user-attachments/assets/f02cc534-4f5c-4a99-baff-c38423374edf" />
 
 ### Skateboard
 
-- Wrire up the motors to GP0/1 and ground. This is scary but it kinda works with small motors!
+- Wrire up the motors to 5V and ground. This is scary but it kinda works with small motors!
 
-![alt text](Images/20250714_080629.jpg)
+<img width="1175" height="684" alt="image" src="https://github.com/user-attachments/assets/7a738d2b-7eaa-4e68-9cc3-647871952c46" />
+
 
 ![alt text](Images/20250714_065042.jpg)
 
